@@ -85,5 +85,5 @@ The UCI_Credit_Card.csv dataset contains 25 columns :
 
        * Here we have deleted the columns which are not important like ID.
        * Calculated the correlation between different features and also plotted a "Spearman" correltion matrix
-![alt text](1.PNG)
+![alt text](src/1.PNG)
        
