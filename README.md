@@ -63,20 +63,27 @@ The UCI_Credit_Card.csv dataset contains 25 columns :
      25. default.payment.next.month: Default payment (1=yes, 0=no)
      
  
- ## Procedure followed for this experiment:
+## Procedure followed for this experiment:
  
 ### 1. Dataset loading and preprocessing of dataset: 
        * At the very first imported some importany libraries 
        * These libraries are imported for data loading and preprocessing like pandas, seaborn, numpy etc.
 
-### 2. EDA
+### 2. EDA :
        * In this step i checked if there are any null values present.
        * What are the colums present and their datatypes unique values present in each column
        * Counting of different categories present in categorical features etc.
        
-     #### Based on the EDA ,we have come across some important points like :
-          1. There are 77.88% people who have not pay the default and most of the females didnt pay.
-          2. 46.76% of individual who were in university but didn't pay.
-          3. Around 53.21% individuas who are single but did not pay.
-          4. 
+#### Based on the EDA ,we have come across some important points like :
+       1. There are 77.88% people who have not pay the default and most of the females didnt pay.
+       2. 46.76% of individual who were in university but didn't pay.
+       3. Around 53.21% individuas who are single but did not pay.
+       4. In september,2005 max repayment status is 49.12%
+       5. In august max repayment status is 52.43% who have not paid the default and many more.
+       
+### 3. Feature Engineering and Feature Selection :
+
+       * Here we have deleted the columns which are not important like ID.
+       * Calculated the correlation between different features and also plotted a "Spearman" correltion matrix
+![alt text](1.PNG)
        
