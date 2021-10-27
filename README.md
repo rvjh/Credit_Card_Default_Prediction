@@ -85,16 +85,24 @@ The UCI_Credit_Card.csv dataset contains 25 columns :
 
        * Here we have deleted the columns which are not important like ID.
        * Calculated the correlation between different features and also plotted a "Spearman" correltion matrix
+       
    ![alt text](src/1.PNG)
+   
        * Also we plotted a bargraph for the correlation values.
+       
    ![alt text](src/2.PNG)
+   
 ### 4. Training :
        * For training i separated the dataset using train test split.
        * Introduced a pipeline using different classification models.
+       
    ![alt text](src/3.PNG)
+   
        * Calculated the different metrices like accuracy score etc. 
        * Compared different classification model accuracy scores for the further process 
-    ![alt text](src/4.PNG)
+       
+   ![alt text](src/4.PNG)
+    
        * As the XGBoost Classifier gives best result so we are considering this XGBoost for the next Hyparameter tuning
 
 ### 5. Hyparameter Tuning using GridSearchCV :
@@ -103,16 +111,22 @@ The UCI_Credit_Card.csv dataset contains 25 columns :
           ** max_depth
           ** eta
         * Using GridSearchCV I did the parameter tuning and again pass the training set to the XGBClassifier model
+        
    ![alt text](src/5.PNG)
+   
         * Again we calculated the accuracy score and different metrices
+        
    ![alt text](src/6.PNG)
+   
 ### 6. Model Performance testing using different metrices : 
         * After getting the model I calculated the accuracy score and different classification metrices like precision_score, recall_score etc.
         * Saved the model for future reference .
+        
    ![alt text](src/7.PNG)
         
 ### 7. Testing the model :
         *  After loading the saved model, I created some test data to see the result.
+        
    ![alt text](src/8.PNG)
              
 
